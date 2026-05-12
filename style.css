@@ -1,0 +1,18 @@
+
+p{
+    color: rgb(2, 245, 164);
+}
+#myid{
+    color: blue;
+}
+.myclass{
+    color: brown;
+}
+p,h1{
+    color: rebeccapurple;
+    text-align: center  ;
+    
+}
+div h1{
+    color: blue;
+}

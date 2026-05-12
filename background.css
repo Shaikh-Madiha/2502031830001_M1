@@ -1,0 +1,24 @@
+.img1{
+    background-image: url("nature.png");
+    background-repeat: no-repeat;
+   
+}
+.img2{
+    background-image: url("nature.png");
+    background-repeat: repeat;
+   
+}
+.img3{
+    background-image: url("nature.png");
+    background-repeat: repeat-x;
+   
+}
+.img4{
+    background-image: url("nature.png");
+    background-repeat: repeat-y;
+   
+}
+div{
+    height: 300px;
+    width:100%;
+}
