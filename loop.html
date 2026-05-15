@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Loops</h1>
+    <h2>For loop</h2>
+    <h2>1.Print numbers 1 to 10</h2>
+    <script>
+      var a;
+      for (a = 1; a <= 10; a++) {
+        document.write(a);
+      }
+    </script>
+    <h2>while loop</h2>
+    <h2>1.Print numbers 1 to 10</h2>
+    <script>
+      var a = 1;
+      while (a <= 10) {
+        document.write(a);
+        a++;
+      }
+    </script>
+    <h2>Do while loop</h2>
+    <h2>1.Print numbers 1 to 10</h2>
+    <script>
+      var a = 1;
+      do {
+        document.write(a);
+        a++;
+      } while (a <= 10);
+    </script>
+    <h2>Do while loop</h2>
+    <h2>2.Display student name</h2>
+    <script>
+      var student = ["kash", "taz", "park"];
+      var n;
+      for (n = 0; n < student.length; n++) {
+        document.write("student name is:" + student[n] + "<br>");
+      }
+    </script>
+    <h2>3.calculate student marks</h2>
+    <script>
+      var marks = [20, 30, 89, 33];
+      total = 0;
+      for (let a = 0; a < marks.length; a++) {
+        total += marks[a];
+      }
+      document.write("total marks:" + a);
+    </script>
+    <h2>4.generate multiplicaion table</h2>
+
+    <script>
+        var num;
+        var table=10;
+        for(num=1;num<=10;num++)
+    {
+        document.write(table+ "*"+num+"="+table*num+"<br>");
+    }
+    </script>
+    <h2>5.print even numbers</h2>
+    <script>
+     var a = 1;
+      while (a <= 10) {
+        if(a%2==0){
+
+        
+        document.write("even numbers="+a+"<br>");
+        
+      } a++;} 
+   </script>
+   <h2>6.print odd numbers</h2>
+    <script>
+     var a = 1;
+      while (a <= 10) {
+        if(a%2!=0){
+
+        
+        document.write("odd numbers="+a+"<br>");
+        
+      } a++;} 
+   </script>
+  <h2>7. Sum of Array Elements</h2>
+
+<script>
+    var arr = [10, 20, 30, 40];
+    var sum = 0;
+
+    for(var i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+
+    document.write("Sum of array elements = " + sum);
+</script>
+
+<br><br>
+
+<h2>8. Reverse a String</h2>
+
+<script>
+    var str = "hello";
+    var rev = "";
+
+    for(var i = str.length - 1; i >= 0; i--) {
+        rev = rev + str[i];
+    }
+
+    document.write("Reverse String = " + rev);
+</script>
+
+<br><br>
+
+<h2>9. Online Quiz Attempt</h2>
+
+<script>
+    var attempt = 1;
+
+    while(attempt <= 5) {
+        document.write("Quiz Attempt " + attempt + "<br>");
+        attempt++;
+    }
+</script>
+
+<br>
+
+<h2>10. Shopping Cart Total Calculation</h2>
+
+<script>
+    var cart = [100, 250, 300, 150];
+    var total = 0;
+
+    for(var i = 0; i < cart.length; i++) {
+        total = total + cart[i];
+    }
+
+    document.write("Total Amount = " + total);
+</script>
+</body>
+</html>

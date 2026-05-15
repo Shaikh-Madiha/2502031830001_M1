@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>variables</h2>
+    <p id="demo"></p>
+    <!-- variables and  operator-->
+
+    <script>
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      var a = x - y;
+      var b = x * y;
+      document.getElementById("demo").innerHTML =
+        "sum of z is " + z + "sub of z is " + a + "mul of z is " + b;
+    </script>
+    -->
+    <!-- Data Type -->
+    <script>
+      var a = "Silver Oak University";
+      var b = 6;
+      var g = 4;
+      var c = true;
+      var d = null;
+      var e = undefined;
+      document.write(typeof a + "<br>");
+      document.write(typeof b + "<br>");
+      document.write(typeof c + "<br>");
+      document.write(typeof d + "<br>");
+      document.write(typeof e + "<br>");
+      document.write("Increament of x:" + ++b + "<br>");
+      document.write("Increament of x:" + --b + "<br>");
+      document.write("b==g:"+(b==g)+"<br>");
+      document.write("b!=g:"+(b!=g)+"<br>");
+      document.write("b>g:"+(b>g)+"<br>");
+      document.write("b>=g:"+(b>=g)+"<br>");
+      document.write("b<g:"+(b<g)+"<br>");
+      document.write("b<=g:"+(b<=g)+"<br>");
+      document.write("b===g:"+(b===g)+"<br>");
+      document.write("b!==g:"+(b!==g)+"<br>");
+
+
+
+    </script>
+
+    <!-- Array -->
+    <script>
+      // Method 1
+      var Car = new Array(3);
+      Car[0] = "Ford";
+      Car[1] = "Toyota";
+      Car[2] = "Honda";
+
+      // Method 2
+      var Car2 = new Array("Ford", "Toyota", "Honda");
+
+      // Method 3
+      var Car3 = ["Audi", "Innova", "WagonR"];
+
+      document.write("Car2: " + Car2 + "<br>");
+
+      // push()
+      Car2.push("Yamaha");
+      document.write("After Push: " + Car2 + "<br>");
+
+      // pop()
+      Car2.pop();
+      document.write("After Pop: " + Car2 + "<br>");
+
+      // concat()
+      var data = Car2.concat(Car3);
+      document.write("Concatenated Array: " + data);
+    </script>
+  </body>
+</html>
