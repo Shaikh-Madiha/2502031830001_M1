@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Function Example</title>
+  </head>
+  <body>
+    <script>
+      function foo(p1) {
+        if (typeof p1 == "number") return 0;
+        else if (typeof p1 == "string") return "zero";
+      }
+
+      document.write(foo(1) + "<br>");
+      document.write(foo("abc") + "<br>");
+      document.write(foo() + "<br>");
+    </script>
+
+    <script>
+      function sum() {
+        var s = 0;
+
+        for (var i = 0; i < arguments.length; i++) {
+          s += arguments[i];
+        }
+
+        return s;
+      }
+
+      var a = sum(1, 2, 3);
+      document.write(a + "<br>"); 
+
+      a = sum(1, 2, 3, 4, 5);
+      document.write(a + "<br>"); 
+
+      a = sum(1, 2, "3", 4, 5);
+      document.write(a + "<br>"); 
+    </script>
+    <script>
+      let greet = () => {
+        console.log("Hello");
+      };
+
+      greet();
+    </script>
+
+    <script>
+      let sum = (a, b) => {
+        let result = a + b;
+
+        return result;
+      };
+
+      let result1 = sum(5, 7);
+
+      console.log(result1);
+    </script>
+  </body>
+</html>

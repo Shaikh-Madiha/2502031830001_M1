@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>getElementById</h1>
+
+    <input type="text" id="myText" />
+    <button onclick="myFunction1()">Click</button>
+
+    <script>
+      function myFunction1() {
+        var a = document.getElementById("myText");
+        alert(a.value);
+      }
+    </script>
+
+    <h1>getElementsByName</h1>
+
+    <input type="text" name="myText" />
+    <button onclick="myFunction2()">Click</button>
+
+    <script>
+      function myFunction2() {
+        var a = document.getElementsByName("myText")[0];
+        alert(a.value);
+      }
+    </script>
+
+    <h1>Form</h1>
+
+    <form name="myForm">
+      <input type="text" name="uname" placeholder="Username" />
+
+      <input type="text" name="pword" placeholder="Password" />
+
+      <input type="button" value="Click" onclick="f()" />
+    </form>
+
+    <script>
+      function f() {
+        var a = document.forms["myForm"];
+
+        var u = a.uname.value;
+        var p = a.pword.value;
+
+        if (u == "admin" && p == "123") {
+          alert("Valid");
+        } else {
+          alert("Invalid");
+        }
+      }
+    </script>
+    <h1>Email validation using regX</h1>
+    <input type="email" id="mytext" />
+    <button onclick="checkmail()">Click</button>
+    <script>
+      function checkmail() {
+        var a = document.getElementById("mytext").value;
+        var pattern = "^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[\\w]$";
+        var regex = new RegExp(pattern);
+        if (regex.test(a)) {
+          alert("valid");
+        } else {
+          alert("invalid");
+        }
+      }
+    </script>
+  </body>
+</html>
